@@ -1,4 +1,4 @@
-# Assignment 3: Book Management System (Full-Stack)
+# Assignment 3: Book Management System 
 
 ##  Project Description
 This is my third assignment where I migrated my backend from a simple `data.json` file to a real cloud database — **MongoDB Atlas**. I chose a "Book Management System" as my topic because it fits my Final Project idea. 
