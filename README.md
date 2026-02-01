@@ -18,6 +18,44 @@ The goal of this project was to handle complex object schemas, set up data persi
 - `author`: String (Required)
 - `genre`: String (Required)
 
+##  Architectural Choices (MVC)
+To follow industry standards, the project is organized into the following directory structure:
+
+
+`models/`: Defines Mongoose schemas for Users, Primary, and Secondary objects.
+
+
+`controllers/`: Contains the logic for handling requests and database operations.
+
+
+`routes/`: Defines API endpoints and maps them to controllers.
+
+
+`middleware/`: Handles authentication (JWT), role-based access control (RBAC), and error logging.
+
+## Data Objects
+- The API manages two related entities:
+
+- Primary Object: The core data entity (e.g., Blog Post or Product).
+
+- Secondary Object: A related entity (e.g., Comment for a post or Category for a product). Full CRUD (Create, Read, Update, Delete) is implemented for both objects.
+
+## Security & RBAC Implementation
+- The system features a secure User model with the following security layers:
+
+
+- Password Hashing: All user passwords are encrypted using bcrypt before being stored in the database.
+
+
+- JWT Authorization: Secure JSON Web Tokens are used to protect resources.
+
+- Role-Based Access Control (RBAC):
+
+- Public Access: GET routes are open to all visitors.
+
+- Protected Access: Users must be logged in to interact with specific parts of the API.
+
+- Admin Access: Only users with the "admin" role can perform POST, PUT, and DELETE operations.
 
 ##  API Endpoints
 | Method | Endpoint | Description | Status Code |
