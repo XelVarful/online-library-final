@@ -70,4 +70,6 @@ Open ```http://localhost:3000 ``` in your browser.
 ## Mongo Atlas database tree
 <img width="1470" height="878" alt="Снимок экрана 2026-02-08 в 17 08 07" src="https://github.com/user-attachments/assets/4f7f7210-4e5d-4908-84aa-e8682cac89fe" />
 
+## Deployment 
 
+https://assignment4-a-adilbek2webtech.onrender.com
