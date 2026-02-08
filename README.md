@@ -46,7 +46,7 @@ Deployment: Render (Backend), MongoDB Atlas (Cloud Database)
 ## Installation & Setup
 Clone the repository:
 ```
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/XelVarful/assignment4.A.Adilbek2WebTech.git
 ```
 Install dependencies:
 ```
