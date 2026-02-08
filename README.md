@@ -67,12 +67,7 @@ node server.js
 Access the app:
 
 Open ```http://localhost:3000 ``` in your browser.
-## API Documentation
-Method	Endpoint	Access	Description
-POST	/api/auth/register	Public	Register a new user
-POST	/api/auth/login	Public	Authenticate user & get JWT
-GET	/api/books	Public	Fetch all books (with Author details)
-POST	/api/books	Admin	Add a new book to the library
-DELETE	/api/books/:id	Admin	Permanently delete a book
-GET	/api/authors	Public	Fetch all registered authors
-POST	/api/authors	Admin	Add a new author profile
+## Mongo Atlas database tree
+<img width="1470" height="878" alt="Снимок экрана 2026-02-08 в 17 08 07" src="https://github.com/user-attachments/assets/4f7f7210-4e5d-4908-84aa-e8682cac89fe" />
+
+
