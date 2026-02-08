@@ -32,11 +32,11 @@ Description: Secure dashboard available only to users with the 'admin' role to m
 
 Description: Professional modal windows displaying detailed data fetched through Mongoose 'populate' (Relational Integrity).
 ## Technology Stack
-Backend: Node.js, Express.js
-Database: MongoDB Atlas (Mongoose ODM)
-Security: JSON Web Tokens (JWT) & BcryptJS (password hashing)
-Frontend: HTML5, CSS3 (Custom Dark Teal Theme), JavaScript (Vanilla ES6+)
-Deployment: Render (Backend), MongoDB Atlas (Cloud Database)
+* Backend: Node.js, Express.js
+* Database: MongoDB Atlas (Mongoose ODM)
+* Security: JSON Web Tokens (JWT) & BcryptJS (password hashing)
+* Frontend: HTML5, CSS3 (Custom Dark Teal Theme), JavaScript (Vanilla ES6+)
+* Deployment: Render (Backend), MongoDB Atlas (Cloud Database)
 
 ## Project Structure (MVC)
 * ```/models``` — MongoDB schemas (User, Book, Author) ensuring relational integrity.
