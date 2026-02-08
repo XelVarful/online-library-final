@@ -1,24 +1,21 @@
 const jwt = require('jsonwebtoken');
 
 const auth = (req, res, next) => {
-    const token = req.header('Authorization')?.replace('Bearer ', '');
-    if (!token) return res.status(401).send('Доступ запрещен. Токен не найден.');
+    const token = req.header('Authorization')?.split(' ')[1];
+    if (!token) return res.status(401).json({ message: "No token, denied" });
 
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = decoded; 
+        req.user = decoded;
         next();
-    } catch (ex) {
-        res.status(400).send('Неверный токен.');
+    } catch (err) {
+        res.status(401).json({ message: "Token invalid" });
     }
 };
 
-// Проверка на админа (RBAC) [cite: 23, 24]
 const admin = (req, res, next) => {
-    if (req.user.role !== 'admin') {
-        return res.status(403).send('Доступ запрещен. Только для администраторов.');
-    }
-    next();
+    if (req.user && req.user.role === 'admin') next();
+    else res.status(403).json({ message: "Admins only" });
 };
 
 module.exports = { auth, admin };
