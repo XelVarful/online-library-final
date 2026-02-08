@@ -39,10 +39,10 @@ Frontend: HTML5, CSS3 (Custom Dark Teal Theme), JavaScript (Vanilla ES6+)
 Deployment: Render (Backend), MongoDB Atlas (Cloud Database)
 
 ## Project Structure (MVC)
-```/models``` — MongoDB schemas (User, Book, Author) ensuring relational integrity.
-```/routes``` — RESTful API endpoints for authentication and business logic.
-```/middleware``` — Custom middleware for JWT verification and Admin role validation.
-```/public``` — Frontend assets including the single-page application logic and styles.
+* ```/models``` — MongoDB schemas (User, Book, Author) ensuring relational integrity.
+* ```/routes``` — RESTful API endpoints for authentication and business logic.
+* ```/middleware``` — Custom middleware for JWT verification and Admin role validation.
+* ```/public``` — Frontend assets including the single-page application logic and styles.
 ## Installation & Setup
 Clone the repository:
 ```
